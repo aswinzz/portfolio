@@ -3,6 +3,46 @@ import { BackgroundGradientAnimation } from "./components/ui/background-gradient
 import { CardStack } from "./components/ui/card-stack";
 import { Card } from "./components/ui/card";
 import { Highlight } from "./components/ui/highlight";
+import { HoverEffect } from "./components/ui/card-hover-effect";
+
+const projects = [
+  {
+    title: "Video Summarization",
+    description:
+      "Summarizes any video containing speech using subtitles, Implemented 5 algorithms along with a combined Ensemble algorithm to improve the efficiency of the summarization.",
+    link: "https://link.springer.com/chapter/10.1007/978-981-15-3514-7_1",
+  },
+  {
+    title: "Centralized Research Data Repository for IIIT Allahabad",
+    description:
+      "Maintain a database of research papers published under the affiliation of IIIT Allahabad by Implementing scrapers for various research paper hosting websites to obtain data related to IIIT Allahabad",
+    link: "#",
+  },
+  {
+    title: "Datlizer",
+    description:
+      "Developed a visualisation tool by which anyone can connect to their database and visualise their data. Also Integrated ML which can be used to predict future results or classify the current state of the data.",
+    link: "https://github.com/Datlizer",
+  },
+  {
+    title: "Hack In The North Registration Portal",
+    description:
+      "Registration Portal built for India’s best Student Held Hackathon, HackInTheNorth. It had a user base of 2000+ students. Developed on top of Quill(An OpenSource Portal from MIT).",
+    link: "#",
+  },
+  // {
+  //   title: "Amazon",
+  //   description:
+  //     "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+  //   link: "https://amazon.com",
+  // },
+  // {
+  //   title: "Microsoft",
+  //   description:
+  //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+  //   link: "https://microsoft.com",
+  // },
+];
 
 const EXPERIENCE = [
   {
@@ -83,6 +123,11 @@ export default function Home() {
       </div>
       <div className="college">
         <Card card={COLLEGE} />
+      </div>
+      
+      <div className="mt-8 mx-auto px-8">
+        <div className="text-5xl text-center">My Projects</div>
+        <HoverEffect items={projects} />
       </div>
       <div className="footer">
         <a href="https://twitter.com/aswinvb1">
