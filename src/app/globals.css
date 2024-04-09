@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat&display=swap');
 
+
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -29,5 +32,51 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+} */
+
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.experience {
+  position: absolute;
+  top: 37%;
+  left: 1%;
+}
+
+.college {
+  position: absolute;
+  top: 37%;
+  left: 73%;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  bottom: 2%;
+  left: 40%;
+  justify-content: space-around;
+  width: 18%;
+}
+
+.footer > a {
+  height: 35px;
+  width: 35px;
+}
+
+@media screen and (max-width: 480px) {
+  .experience {
+    display: none;
+  }
+
+  .college {
+    display: none;
+  }
+
+  .footer {
+    left: 8%;
+    width: 90%;
   }
 }
