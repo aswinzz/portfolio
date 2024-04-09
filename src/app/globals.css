@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'); */
 
 /* 
 :root {
@@ -37,19 +37,24 @@ body {
 
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Pixelify Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .experience {
   position: absolute;
   top: 37%;
   left: 1%;
+  font-family: sans-serif;
 }
 
 .college {
   position: absolute;
   top: 37%;
   left: 73%;
+  font-family: sans-serif;
 }
 
 .footer {
