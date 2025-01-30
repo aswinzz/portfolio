@@ -14,7 +14,7 @@ export default function HeroSection() {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-4">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-blue-600">Aswin VB</span>
+              Hi, I&apos;m <span className="text-blue-600">Aswin VB</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8">
               Building scalable web applications with passion
