@@ -251,7 +251,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <p className="text-gray-600 mb-4">
-                  Let's discuss your project or just say hello! I'm always open to new
+                  Let&apos;s discuss your project or just say hello! I&apos;m always open to new
                   opportunities and interesting collaborations.
                 </p>
                 <div className="space-y-4">
