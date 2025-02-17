@@ -62,21 +62,27 @@ const WorkExperience = [
 
 const FeaturedProjects = [
   {
+    title: "ClipWeave",
+    description: "A browser-based video/audio editor that allows you to crop, merge, and edit media files. Built with ffmpeg for seamless in-browser processing.",
+    tags: ["Next.js", "FFMPEG", "WebAssembly"],
+    link: "https://clipweave.xyz",
+  },
+  {
     title: "Pull Sense",
-    description: "An AI powered Pull Request Reviewer",
-    tags: ["Next JS", "Bun", "Supabase", "Clerk"],
+    description: "An AI-powered Pull Request Reviewer that helps developers catch issues early. Provides automated code review suggestions to improve code quality.",
+    tags: ["Next.js", "Bun", "Supabase", "Clerk"],
     link: "https://pullsense.com",
   },
   {
     title: "Fit All In One",
-    description: "An all in one fitness app",
+    description: "A comprehensive fitness application that combines workout tracking, nutrition planning, and progress monitoring.",
     tags: ["React Native", "Bun", "Supabase"],
     link: "#",
   },
   {
     title: "Video Mash",
-    description: "A video summarization tool using ML",
-    tags: ["Pythin", "Django"],
+    description: "An intelligent video summarization tool using Machine Learning. Automatically generates concise video summaries from longer videos.",
+    tags: ["Python", "Django"],
     link: "https://github.com/aswinzz/VideoMash",
   }
 ];
