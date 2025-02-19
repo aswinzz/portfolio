@@ -74,6 +74,12 @@ const FeaturedProjects = [
     link: "https://pullsense.com",
   },
   {
+    title: "Coach Akshay",
+    description: "A modern portfolio website for a personal trainer, featuring program details, testimonials, and booking system. Designed to showcase fitness expertise and client transformations.",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    link: "https://coachakshay.com",
+  },
+  {
     title: "Fit All In One",
     description: "A comprehensive fitness application that combines workout tracking, nutrition planning, and progress monitoring.",
     tags: ["React Native", "Bun", "Supabase"],
