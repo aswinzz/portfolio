@@ -80,10 +80,10 @@ const FeaturedProjects = [
     link: "https://coachakshay.com",
   },
   {
-    title: "Fit All In One",
+    title: "Fitboite",
     description: "A comprehensive fitness application that combines workout tracking, nutrition planning, and progress monitoring.",
-    tags: ["React Native", "Bun", "Supabase"],
-    link: "#",
+    tags: ["Next JS", "Bun", "Supabase"],
+    link: "https://fitboite.com",
   },
   {
     title: "Video Mash",
