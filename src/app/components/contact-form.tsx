@@ -18,14 +18,14 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="space-y-4" onSubmit={handleSubmit}>
+    <form className="space-y-6" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Your Name"
         value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         required
-        className="w-full p-2 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-600"
+        className="w-full p-3 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:outline-none focus:border-blue-500 focus:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all font-medium"
       />
       <input
         type="email"
@@ -33,20 +33,20 @@ export default function ContactForm() {
         value={formData.email}
         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         required
-        className="w-full p-2 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-600"
+        className="w-full p-3 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] focus:outline-none focus:border-blue-500 focus:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all font-medium"
       />
       <textarea
         placeholder="Your Message"
         value={formData.message}
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
         required
-        className="w-full p-2 bg-gray-50 border border-gray-200 rounded-lg h-32 focus:outline-none focus:border-blue-600"
+        className="w-full p-3 bg-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] h-32 focus:outline-none focus:border-blue-500 focus:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all font-medium"
       />
       <button 
         type="submit"
-        className="bg-blue-600 text-white px-6 py-2 rounded-lg w-full hover:bg-blue-700 transition-colors"
+        className="w-full bg-blue-500 text-white font-bold py-3 px-6 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all"
       >
-        Submit
+        Send Message
       </button>
     </form>
   );
