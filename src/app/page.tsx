@@ -62,28 +62,34 @@ const WorkExperience = [
 
 const FeaturedProjects = [
   {
-    title: "ClipWeave",
-    description: "A browser-based video/audio editor that allows you to crop, merge, and edit media files. Built with ffmpeg for seamless in-browser processing.",
-    tags: ["Next.js", "FFMPEG", "WebAssembly"],
-    link: "https://clipweave.xyz",
-  },
-  {
     title: "Pull Sense",
     description: "An AI-powered Pull Request Reviewer that helps developers catch issues early. Provides automated code review suggestions to improve code quality.",
     tags: ["Next.js", "Bun", "Supabase", "Clerk"],
     link: "https://pullsense.com",
   },
   {
-    title: "Coach Akshay",
-    description: "A modern portfolio website for a personal trainer, featuring program details, testimonials, and booking system. Designed to showcase fitness expertise and client transformations.",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    link: "https://coachakshay.com",
-  },
-  {
     title: "Fitboite",
     description: "A comprehensive fitness application that combines workout tracking, nutrition planning, and progress monitoring.",
     tags: ["Next JS", "Bun", "Supabase"],
     link: "https://fitboite.com",
+  },
+  {
+    title: "Key Events Tester",
+    description: "A JavaScript keyboard event tester and viewer that helps developers understand and debug keyboard interactions. Built with Next.js for real-time event monitoring and analysis.",
+    tags: ["Next.js", "Tailwind CSS", "JavaScript"],
+    link: "https://key-events.aswinvb.com",
+  },
+  {
+    title: "ClipWeave",
+    description: "A browser-based video/audio editor that allows you to crop, merge, and edit media files. Built with ffmpeg for seamless in-browser processing.",
+    tags: ["Next.js", "FFMPEG", "WebAssembly"],
+    link: "https://clipweave.xyz",
+  },
+  {
+    title: "Coach Akshay",
+    description: "A modern portfolio website for a personal trainer, featuring program details, testimonials, and booking system. Designed to showcase fitness expertise and client transformations.",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    link: "https://coachakshay.com",
   },
   {
     title: "Video Mash",
@@ -218,6 +224,7 @@ export default function Home() {
               </div>
               <Link 
                 href={project.link} 
+                target="_blank"
                 className="inline-block bg-blue-500 text-white font-bold py-2 px-4 border-2 border-black transition-all duration-300 hover:bg-white hover:text-blue-500"
               >
                 View Project →
