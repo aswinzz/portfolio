@@ -68,6 +68,12 @@ const FeaturedProjects = [
     link: "https://pullsense.com",
   },
   {
+    title: "Changelogs.site",
+    description: "Create, manage, and share beautiful changelogs with hosted pages, custom domains, API access, team integrations, and embeddable widgets.",
+    tags: ["Next.js", "Bun", "Supabase", "Clerk"],
+    link: "https://changelogs.site",
+  },
+  {
     title: "Fitboite",
     description: "A comprehensive fitness application that combines workout tracking, nutrition planning, and progress monitoring.",
     tags: ["Next JS", "Bun", "Supabase"],
