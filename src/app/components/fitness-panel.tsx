@@ -11,28 +11,10 @@ const stats = [
   { icon: "🎯", value: "42.2km", label: "Full Marathon — Next" },
 ];
 
-const pillars = [
-  {
-    name: "Running",
-    icon: "🏃",
-    color: "#f97316",
-    desc: "Half marathon finisher chasing a full marathon. Training in HR zones, tracking with Garmin. Every run is data.",
-    tags: ["Garmin tracking", "HR zones", "Pacing", "Recovery"],
-  },
-  {
-    name: "HYROX",
-    icon: "🔥",
-    color: "#ef4444",
-    desc: "Targeting sub-90 min. Hybrid functional fitness where strength meets endurance. The most honest test of a hybrid athlete.",
-    tags: ["Sub-90 target", "Functional strength", "Endurance", "Competition"],
-  },
-  {
-    name: "Strength",
-    icon: "🏋️",
-    color: "#fb923c",
-    desc: "Lean bulk mindset. Compound movements. Strength that serves performance, not just aesthetics.",
-    tags: ["Lean bulk", "Compound lifts", "Performance", "Progressive overload"],
-  },
+const routine = [
+  { freq: "3–4×", unit: "/ week", label: "Running", icon: "🏃", color: "#f97316" },
+  { freq: "2×",   unit: "/ week", label: "Strength Training", icon: "🏋️", color: "#fb923c" },
+  { freq: "1×",   unit: "/ week", label: "HYROX Conditioning", icon: "🔥", color: "#ef4444" },
 ];
 
 
@@ -42,7 +24,6 @@ const goals = [
   { label: "Complete an Ironman", done: false },
   { label: "Half marathon finisher", done: true },
   { label: "Grow to 100K audience", done: false },
-  { label: "Launch Fitboite v1", done: true },
 ];
 
 export default function FitnessPanel() {
@@ -152,32 +133,26 @@ export default function FitnessPanel() {
       <AthleteDivider label="TRAINING" />
 
       {/* ── TRAINING PILLARS ─────────────────────────── */}
-      <section className="px-8 py-12 space-y-4">
-        {pillars.map((p) => (
+      <section className="px-8 py-12 space-y-3">
+        {routine.map((r) => (
           <div
-            key={p.name}
-            className="p-5 group transition-all"
-            style={{ border: "1px solid #451a0344", background: "#0f070022" }}
+            key={r.label}
+            className="flex items-center gap-5 p-5"
+            style={{ border: "1px solid #451a0344" }}
           >
-            <div className="flex items-center gap-3 mb-3">
-              <span className="text-xl">{p.icon}</span>
-              <h3 className="font-black text-base" style={{ color: p.color }}>
-                {p.name}
-              </h3>
+            <span className="text-2xl">{r.icon}</span>
+            <div className="flex-1">
+              <span className="text-sm font-medium" style={{ color: "#fef3c7" }}>
+                {r.label}
+              </span>
             </div>
-            <p className="text-xs leading-relaxed mb-4" style={{ color: "#a16207" }}>
-              {p.desc}
-            </p>
-            <div className="flex flex-wrap gap-1.5">
-              {p.tags.map((t) => (
-                <span
-                  key={t}
-                  className="text-xs font-mono px-2 py-0.5"
-                  style={{ background: "#1a0a00", color: "#a16207", border: "1px solid #451a0344" }}
-                >
-                  {t}
-                </span>
-              ))}
+            <div className="text-right flex-shrink-0">
+              <span className="text-2xl font-black" style={{ color: r.color }}>
+                {r.freq}
+              </span>
+              <span className="text-xs font-mono ml-1" style={{ color: "#a16207" }}>
+                {r.unit}
+              </span>
             </div>
           </div>
         ))}
